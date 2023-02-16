@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 const FilterSort = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [sortBy, setSortBy]=useState(searchParams.getAll('sortBy') || '')
+  const [sortBy, setSortBy] = useState(searchParams.getAll("sortBy") || "");
   const [category, setCategory] = useState(searchParams.get("genre") || []);
   const hendFilter = (e) => {
     const option = e.target.value;
@@ -17,16 +17,15 @@ const FilterSort = () => {
     setCategory(newCategory);
   };
 
-
-  const heandleSortBy =(e) => {
+  const heandleSortBy = (e) => {
     setSortBy(e.target.value);
-  }
-  console.log(setSortBy)
+  };
+  console.log(setSortBy);
 
   useEffect(() => {
     const params = {};
     category && (params.genre = category);
-    sortBy && (params.sortBy = sortBy)
+    sortBy && (params.sortBy = sortBy);
     setSearchParams(params);
   }, [category, setSearchParams, sortBy]);
   return (
@@ -75,11 +74,21 @@ const FilterSort = () => {
       <h2>Sort</h2>
       <div onChange={heandleSortBy}>
         <div>
-          <input type='radio' value="asc" defaultChecked={sortBy === 'asc'} name="sortBy" />
+          <input
+            type="radio"
+            value="asc"
+            defaultChecked={sortBy === "asc"}
+            name="sortBy"
+          />
           <label>Ascnding</label>
         </div>
         <div>
-          <input type='radio' value="desc" defaultChecked={sortBy === 'desc'} name="sortBy" />
+          <input
+            type="radio"
+            value="desc"
+            defaultChecked={sortBy === "desc"}
+            name="sortBy"
+          />
           <label>Descnding</label>
         </div>
       </div>
