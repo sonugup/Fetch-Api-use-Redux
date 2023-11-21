@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="366" height="156" version="1.1" viewBox="0 0 96.837 41.275" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-19.389 -13.241)">
+  <g transform="translate(11.104 -34.004)" stroke-opacity="0">
+   <g transform="matrix(.69565 0 0 .69565 2.2114 21.667)" fill="#0055d4">
+    <rect x="8.8388" y="36.877" width="19.694" height="59.082" ry="9.8471"/>
+    <g transform="translate(-8.1881 .87902)">
+     <rect transform="matrix(.94038 .34013 -.3418 .93977 0 0)" x="81.324" y="8.6186" width="19.638" height="58.789" ry="9.7982"/>
+     <circle cx="51.779" cy="56.889" r="8.2262"/>
+     <circle cx="93.534" cy="76.965" r="8.2262"/>
+    </g>
+   </g>
+   <rect transform="rotate(90.088)" x="48.861" y="-104.95" width="13.147" height="27.312" ry="6.5733" fill="#2a7fff"/>
+   <rect transform="rotate(90.088)" x="61.559" y="-99.943" width="13.147" height="27.312" ry="6.5733" fill="#06f"/>
+   <rect transform="rotate(90.088)" x="73.961" y="-102.25" width="13.147" height="27.312" ry="6.5733" fill="#0055d4"/>
+  </g>
+ </g>
+</svg>

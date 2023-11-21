@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contan{
+    margin:8% -5.5%;
+   
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box{
+    margin: 0;
+    padding-bottom: -30px;
+    background-color: white;
+    padding:0 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbox{
+    display: flex;
+    justify-content: space-between;
+    padding:-3px 20px ;
+    margin:0 auto;
+}
+.navbox div{
+    padding: 30px 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+}
+.divbox1{
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #fab1a0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox2{
+    display: flex;
+    font-size: 40px;
+    background-color: #7ed6df;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox3{
+    
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #95a5a6;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.divbox4{
+    
+    display: flex;
+    font-size: 40px;
+    justify-content: space-between;
+    background-color: #74b9ff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.link1{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.link2{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.quizs{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.recen{
+    display: flex;
+}
+.cont{
+    width: 100%;
+    display: flex;
+}
+.secbox{
+    width: 48%;
+    margin: auto;
+    padding: 10px;
+    height: 460px;
+    background: #fff;
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow .1s ease-in-out;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+
+}
+.inbox{
+    width: 100%;
+    margin: auto;
+}
+.topof{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

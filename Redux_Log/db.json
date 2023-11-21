@@ -1,0 +1,46 @@
+{
+  "student": [
+    {
+      "id": 9,
+      "email": "vikassadarang22533@gmail.com",
+      "name": "Vilas Sadarang",
+      "contact": 1234567895,
+      "group": "React.js"
+    },
+    {
+      "email": "akansha@gmail.com",
+      "name": "Akansha",
+      "contact": "3450234490",
+      "group": "electron.js",
+      "id": 11
+    },
+    {
+      "email": "govind@gmail.com",
+      "name": "Govind",
+      "contact": "4850384658",
+      "group": "React.js",
+      "id": 14
+    },
+    {
+      "email": "sonu@gmail.com",
+      "name": "Sonu",
+      "contact": "4398548934",
+      "group": "React.js",
+      "id": 15
+    },
+    {
+      "email": "sonugovind@gmail.com",
+      "name": "Sonu and Govind",
+      "contact": "9238457684",
+      "group": "full stack web developar",
+      "id": 16
+    },
+    {
+      "email": "asdfg@gmail.com",
+      "name": "Asdfg",
+      "contact": "3425487537",
+      "group": "node.js",
+      "id": 17
+    }
+  ]
+}

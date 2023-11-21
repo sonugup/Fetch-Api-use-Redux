@@ -1,0 +1,9 @@
+.mainpage{
+    margin-bottom: 3%;
+    padding: 0;
+    width: 100%;
+    background-image: url("https://talentcorner.in/wp-content/uploads/2019/07/bgimage.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
