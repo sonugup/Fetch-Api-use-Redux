@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
+import { useDispatch, useSelector } from "react";
 import {FaUserAlt} from "react-icons/fa"
 import {MdEmail} from "react-icons/md"
 import {RiLockPasswordLine} from "react-icons/ri"
 import {FaUserPlus} from "react-icons/fa"
 import {CiLogin} from "react-icons/ci"
+import { registerInitiate } from "../Redux_react/action";
 
 const Resistor = () => {
   const [state, setState]=useState({
@@ -15,16 +17,29 @@ const Resistor = () => {
 
   })
   
+  const {isAuth} = useSelector((state) => state.user);
+
+  const dispatch=useDispatch()
+
+  const navigate=useNavigate()
   const {name, email, password} =state;
 
   const handleSubmit=(event) => {
     event.preventDefault();
-   
+    dispatch(registerInitiate(email, password, name))
+    setState({email:"", password:"", name:""})
   }
     
-  const hendlechenge = () => {
-
+  const hendlechenge = (e) => {
+        let {name, value} = e.target;
+        setState({...state, [name]:value});
   }
+
+  useEffect(() => {
+    if(isAuth){
+      navigate.push("/home")
+    }
+  }, [isAuth, navigate])
   // 
     
       return (

@@ -14,4 +14,4 @@ const firebaseConfig = {
 
   const auth = firebase.auth();
 
-  export {auth}
+  export {auth};

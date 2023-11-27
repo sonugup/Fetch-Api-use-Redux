@@ -8,33 +8,10 @@ import { GiStarKey } from "react-icons/gi";
 import { FaUsersSlash } from "react-icons/fa";
 import { BiCircle } from "react-icons/bi";
 import PieChart from "./Pages/PieChart";
-// import {
-//   Chart as ChartJS,
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend,
-// } from 'chart.js';
 
-// import { Line } from 'react-chartjs-2';
-// import faker from 'faker';
-
-// ChartJS.register(
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Title,
-//   Tooltip,
-//   Legend
-// );
-// import Data from "./data/data";
 
 const Home = () => {
-  const [data, setData]= useState([])
+  const [data, setData] = useState([])
   const [curPage, setCurPage] = useState(1);
   const recordsPerPage = 5;
   const lastIndex = curPage * recordsPerPage;
@@ -60,10 +37,10 @@ const Home = () => {
 
   useEffect(() => {
     axios.get(`http://localhost:8081/api/get`)
-    .then(res => setData(res.data))
-    .catch(error => console.log(error))
-},[])
-console.log(data)
+      .then(res => setData(res.data))
+      .catch(error => console.log(error))
+  }, [])
+  console.log(data)
   return (
     <div className="contan">
       <div className="box">
@@ -134,7 +111,7 @@ console.log(data)
                 </div>
               </div>
               <div className="inboxin">
-               
+
                 <table className="table table-striped">
                   <thead>
                     <tr>
@@ -165,9 +142,8 @@ console.log(data)
                     {number.map((n, i) => {
                       return (
                         <li
-                          className={`page-item ${
-                            curPage === n ? 'activ' : ''
-                          }`}
+                          className={`page-item ${curPage === n ? 'activ' : ''
+                            }`}
                           key={i}
                         >
                           <button
@@ -190,9 +166,9 @@ console.log(data)
             </div>
           </div>
           <div className="secbox">
-          
+
             <p>Revenue nan% from last month</p>
-            <PieChart/>
+            <PieChart />
           </div>
         </div>
       </div>
@@ -240,7 +216,7 @@ console.log(data)
 //       <Line options={options} data={data} />;
 //     </div>
 //   )
-  
+
 
 // }
 

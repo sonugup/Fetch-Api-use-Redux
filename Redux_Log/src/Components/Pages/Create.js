@@ -10,37 +10,37 @@ const Create = () => {
     group: "",
   });
 
-  const {name, email, contact, group} = inputData;
+  const { name, email, contact, group } = inputData;
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    if(!name || !email || !contact || !group){
+    if (!name || !email || !contact || !group) {
       console.log("please fill the form")
     }
-    else{
+    else {
       axios.post(`http://localhost:8081/api/post`, {
-        name, 
-        email, 
+        name,
+        email,
         contact,
         group
       })
-      .then(() => {
-        setInputData({name:"", email:"", contact:"", group:""});
-      })
-      .catch((err) =>console.log(err));
+        .then(() => {
+          setInputData({ name: "", email: "", contact: "", group: "" });
+        })
+        .catch((err) => console.log(err));
 
       alert("success")
       navigate("/student");
     }
 
-    
+
   };
 
-  const hendlechenge =(e) => {
-    const {name, value}=e.target;
-    setInputData({...inputData, [name]:value});
+  const hendlechenge = (e) => {
+    const { name, value } = e.target;
+    setInputData({ ...inputData, [name]: value });
   }
   return (
     <div className="d-flext w-100 vh-100 justify-content-center align-items-center">
@@ -72,9 +72,9 @@ const Create = () => {
               className="form-control"
               name="name"
               onChange={hendlechenge}
-              // onChange={(e) =>
-              //   setInputData({ ...inputData, name: e.target.value })
-              // }
+            // onChange={(e) =>
+            //   setInputData({ ...inputData, name: e.target.value })
+            // }
             />
           </div>
           <div className="mb-3">
@@ -84,9 +84,9 @@ const Create = () => {
               className="form-control"
               name="contact"
               onChange={hendlechenge}
-              // onChange={(e) =>
-              //   setInputData({ ...inputData, contact: e.target.value })
-              // }
+            // onChange={(e) =>
+            //   setInputData({ ...inputData, contact: e.target.value })
+            // }
             />
           </div>
           <div className="mb-3">
@@ -96,9 +96,9 @@ const Create = () => {
               className="form-control"
               name="group"
               onChange={hendlechenge}
-              // onChange={(e) =>
-              //   setInputData({ ...inputData, group: e.target.value })
-              // }
+            // onChange={(e) =>
+            //   setInputData({ ...inputData, group: e.target.value })
+            // }
             />
           </div>
           <button type="submit" className="btn btn-primary btn-success">
