@@ -1,5 +1,6 @@
 
-import { auth } from "../firebase/Firebase.js";
+
+import { auth } from "../../firebase";
 import * as types from "./actionType"
 const registerRequst = () => ({
     type: types.REGISTER_REQUEST,
