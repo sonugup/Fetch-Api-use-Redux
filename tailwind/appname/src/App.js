@@ -1,6 +1,7 @@
 
 // import './App.css';
 
+import AdvanceTaxCalc from "./AdvanceTaxCalc";
 import AllRouter from "./AllRouter/AllRouter";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <div className="contener">
       <AllRouter/>
+      {/* <AdvanceTaxCalc/> */}
     </div>
     </>
   );

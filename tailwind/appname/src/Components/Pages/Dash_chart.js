@@ -52,16 +52,25 @@ import { Line } from 'react-chartjs-2'
 const LineChart = () => {
   // const labels = ["January", "February", "March", "April", "May", "June"];
 
-  const labels = [2004, 2005, 2006, 2007, 2008, 2009, 2010];
+  const labels = [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010];
   const data = {
     labels: labels,
     datasets: [
       {
         label: "My First dataset",
-        backgroundColor: "rgb(255,99,132)",
-        borderColor: "rgb(255,99,132)",
-        data: [0, 10, 5, 2, 20, 30, 45],
+        backgroundColor:"rgb(45, 247, 153, 0.5)",
+        // borderColor: "#00ff2a",
+        data: [10, 1, 30, 14, 20, 36, 32, 25, 40,0],
+        // 0, 10, 5, 2, 20, 30, 45
+        fill:true,
       },
+      {
+        label: "Second dataset",
+        data: [5, 5, 5, 20, 9, 30, 14, 25, 15, 20],
+        fill: true,
+        backgroundColor: "rgb(158, 110, 5, 0.5)",
+        // borderColor: "rgb(255,99,132)",
+      }
     ],  
   };
   return (

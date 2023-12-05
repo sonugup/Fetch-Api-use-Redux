@@ -10,20 +10,20 @@ const data = {
       data: [33, 53, 85, 41, 44, 65],
       fill: true,
       backgroundColor: "rgba(75,192,192,0.2)",
-      borderColor: "rgba(75,192,192,1)"
+      // borderColor: "rgba(75,192,192,1)"
     },
-    {
-      label: "Second dataset",
-      data: [33, 25, 35, 51, 54, 76],
-      fill: true,
-      borderColor: "#742774"
-    }
+    // {
+    //   label: "Second dataset",
+    //   data: [33, 25, 35, 51, 54, 76],
+    //   fill: true,
+    //   borderColor: "#742774"
+    // }
   ]
 };
 
 const LineChart2=() =>{
   return (
-    <div className="App">
+    <div className=" bg-white rounded-3xl">
       <Line data={data} />
     </div>
   );
