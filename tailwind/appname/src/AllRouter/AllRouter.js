@@ -14,10 +14,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../Components/Pages/Home';
 import Login from '../Components/Login';
-import Dashboard from '../Components/Pages/Dashboard';
+import Dashboard from '../Components/Pages/Dasboard/Dashboard';
 import NotFound from '../Components/Pages/NotFound';
 import Navbar from '../Components/Navbar/Navbar';
 import PriveteRoute from '../Components/PriveteRoute/PriveteRoute';
+import GstPage from '../Components/Pages/GSTPage/GstPage';
 
 
 const AllRouter = () => {
@@ -29,6 +30,7 @@ const AllRouter = () => {
                     <Route path="/" exact element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/dashboard" element={<PriveteRoute><Dashboard /></PriveteRoute>} />
+                    <Route path="/gstpage" element={<PriveteRoute><GstPage /></PriveteRoute>} />
                     <Route path='*' element={<NotFound />} />
                 </Routes>
             </div>

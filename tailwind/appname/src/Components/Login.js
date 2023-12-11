@@ -27,7 +27,7 @@ const Login = () => {
             <p className='  text-bolt font-medium text-ms m-2 leading-6'>Maximum Tax Saving For You For</p>
             <p className='text-lg font-extrabold text-3xl'>Your Business</p>
           </div>
-          <div className='w-1/3 grid w-10/12 m-auto items-center leading-10'>
+          <div className='w-2/7 grid w-10/12 m-auto items-center leading-10 border'>
             <p className=' items-center flex gap-7 text-base leading-7 font-sans'>
               <FaRegCircleCheck />
               <span>Reconciliation accurately</span>

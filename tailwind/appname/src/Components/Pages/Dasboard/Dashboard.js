@@ -9,7 +9,7 @@ import LineChart2 from './Dash_chart2';
 const Dashboard = () => {
   return (
     <div>
-      <div className="container mx-auto border bg-blue-100 h-full">
+      <div className="container mx-auto border  h-full">
         <div className=' w-full  md:w-11/12 lg:w-11/12 xl:w-11/12  lg:gap-60  xl:gap-x-80 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border  m-auto text-center '>
           <div className="mt-4 mr-7 sm:w-11/12 px-0 w-10/12 md:w-72 md:mr-4 lg:w-72 m-auto" >
             <label htmlFor="mySelect" className="block text-sm font-medium text-gray-700">
@@ -58,8 +58,8 @@ const Dashboard = () => {
           </div>
 
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 m-10 p-5">
-          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 m-10 p-5">
+          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold  cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-100 hover:text-black duration-300">
             <h3 className="text-2xl font-semibold mb-2">TOTAL USER</h3>
             <h1 className='text-slate-700 text-3xl font-extrabold flex justify-between'>
               {"3520"}
@@ -70,7 +70,8 @@ const Dashboard = () => {
             <p><span className='text-green-500 font-bold'>{"+10%"}</span> Since</p>
             <p>Yesterday</p>
           </div>
-          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold">
+
+          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold  cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-100 hover:text-black duration-300">
             <h3 className="text-2xl font-semibold mb-2">NEW   CLIENTS</h3>
             <h1 className='text-slate-700 text-3xl font-extrabold flex justify-between'>
               {"350"}
@@ -81,7 +82,7 @@ const Dashboard = () => {
             <p><span className='text-red-500 font-bold'>{"-2%"}</span> since last</p>
             <p>quarter</p>
           </div>
-          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold">
+          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold  cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-100 hover:text-black duration-300">
             <h3 className="text-2xl font-semibold mb-2">SALES</h3>
             <h1 className='text-slate-700 text-3xl font-extrabold flex justify-between'>
               {"₹103,403"}
@@ -92,7 +93,7 @@ const Dashboard = () => {
             <p><span className=' font-bold text-green-500'>{"+20%"}</span> since</p>
             <p>last month</p>
           </div>
-          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold">
+          <div className="bg-white p-4 rounded-3xl shadow-xl text-gray-400 font-bold  cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-blue-100 hover:text-black duration-300">
             <h3 className="text-2xl font-semibold mb-2">Today'a Visiters</h3>
             <h1 className='text-slate-700 text-3xl font-extrabold flex justify-between'>
               {"106"}
@@ -106,10 +107,10 @@ const Dashboard = () => {
         </div>
 
         <div className='w-11/12 m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
-          <div className='w-1/1 font-sans text-center h-100 rounded-3xl shadow-2xl border '>
+          <div className='w-1/1 font-sans text-center h-100 rounded-3xl shadow-2xl border   cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300'>
             <LineChart />
           </div>
-          <div className='w-1/1 font-sans text-center h-100 rounded-3xl shadow-2xl'>
+          <div className='w-1/1 font-sans text-center h-100 rounded-3xl shadow-2xl  cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300'>
             <LineChart2 />
           </div>
         </div>
